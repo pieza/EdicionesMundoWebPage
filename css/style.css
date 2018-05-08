@@ -12,7 +12,7 @@ h1 {
 h2 {
 	line-height: 20px;
 	margin: 0;
-	color: #25BAD0;
+	color: #FFFFFF;
 	margin-bottom: 30px;
 	font-size: 40px;
 	font-weight: 400;
@@ -42,7 +42,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #25BAD0;
+	color: #FFFFFF;
 }
 ul, ol {
 	list-style: none;
@@ -86,7 +86,7 @@ ul, ol {
 	letter-spacing: 1px;
 }
 #menu a.navbar-brand i.fa {
-	color: #25BAD0;
+	color: #FFFFFF;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -95,30 +95,30 @@ ul, ol {
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #25BAD0;
+	color: #FFFFFF;
 }
 .on {
 	background-color: #03252b !important;
 	padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #25BAD0 !important;
+	color: #FFFFFF !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #25BAD0;
-	border-color: #25BAD0;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
 }
 .btn-default {
-	color: #25BAD0;
+	color: #FFFFFF;
 	background-color: transparent;
-	border: 2px solid #25BAD0;
+	border: 2px solid #FFFFFF;
 	padding: 12px 20px;
 	margin: 0;
 	font-size: 15px;
@@ -126,9 +126,9 @@ ul, ol {
 	text-transform: uppercase;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	color: #053740;
-	background-color: #25BAD0;
-	border-color: #25BAD0;
+	color: #0187d0;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -159,7 +159,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background: -moz-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(5,55,64,1) 0%, rgba(5,55,64,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', endColorstr='#99053740', GradientType=0 ); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0187d0', endColorstr='#99053740', GradientType=0 ); /* IE6-9 */
 }
 .section-title {
 	padding: 25px 0 60px 0;
@@ -171,7 +171,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', end
 	color: rgba(255,255,255,0.9);
 }
 .intro .brand {
-	color: #25BAD0;
+	color: #FFFFFF;
 	font-weight: 700;
 }
 .intro .intro-text p {
@@ -188,40 +188,40 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 120px 0;
-	background: #053740;
+	background: #0187d0;
 }
 #services h4 {
-	color: #25BAD0;
+	color: #FFFFFF;
 	text-transform: uppercase;
 }
 #services i.fa {
 	font-size: 32px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
-	color: #053740;
+	color: #0187d0;
 	width: 100px;
 	height: 100px;
 	padding: 33px 0;
-	border: 1px solid #25BAD0;
-	background: #25BAD0;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF;
 	border-radius: 50%;
 }
 /* About Section */
 #about {
 	padding: 100px 0;
-	color: rgba(255,255,255,0.9);
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
-	background: rgb(32,166,187); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0 ); /* IE6-9 */
+	color: #0187d0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,FFFFFF+50 */
+	background: #0187d0; /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#FFFFFF', GradientType=0 ); /* IE6-9 */
 }
 #about h2 {
-	color: rgba(255,255,255,0.8);
+	color: #0187d0;
 }
 #about h4 {
-	color: #0a4b55;
+	color: #0187d0;
 }
 #about .about-text {
 	margin-left: 10px;
@@ -233,7 +233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', end
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
-	background: #053740;
+	background: #0187d0;
 }
 .categories {
 	padding-bottom: 30px;
@@ -249,17 +249,17 @@ ol.type li {
 }
 ol.type li a {
 	background: transparent;
-	border: 2px solid #25BAD0;
-	color: #25BAD0;
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
 	padding: 10px 20px;
 }
 ol.type li a.active {
-	background: #25BAD0;
-	color: #053740;
+	background: #FFFFFF;
+	color: #0187d0;
 }
 ol.type li a:hover {
-	background: #25BAD0;
-	color: #053740;
+	background: #FFFFFF;
+	color: #0187d0;
 }
 .isotope-item {
 	z-index: 2
@@ -361,16 +361,16 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	padding: 100px 0;
-	color: rgba(255,255,255,0.9);
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
-	background: rgb(32,166,187); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(32,166,187,1) 0%, rgba(37,186,208,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0 ); /* IE6-9 */
+	color: #0187d0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,FFFFFF+50 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a6bb', endColorstr='#FFFFFF', GradientType=0 ); /* IE6-9 */
 }
 #team h2 {
-	color: rgba(255,255,255,0.8);
+	color: #0187d0;
 }
 #team h3 {
 	color: #0a4b55;
@@ -385,7 +385,7 @@ img.img-circle.team-img {
 }
 #team .thumbnail .caption {
 	padding: 9px;
-	color: rgba(255,255,255,0.9);
+	color: #0187d0;
 }
 /* Contact Section */
 #contact {
@@ -402,7 +402,7 @@ img.img-circle.team-img {
 	background: -moz-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.75) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(5,55,64,1) 0%, rgba(5,55,64,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(5,55,64,1) 0%, rgba(5,55,64,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', endColorstr='#bf053740', GradientType=0 ); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0187d0', endColorstr='#bf053740', GradientType=0 ); /* IE6-9 */
 }
 #contact h3 {
 	padding-top: 20px;
@@ -479,7 +479,7 @@ color: #ccc;
 	transition: all 0.5s;
 }
 #contact .social i.fa:hover {
-	color: #25BAD0;
+	color: #FFFFFF;
 }
 /* Footer Section*/
 #footer {
@@ -493,7 +493,7 @@ color: #ccc;
 	color: #aaa;
 }
 #footer a:hover {
-	color: #25BAD0;
+	color: #FFFFFF;
 }
 
 /* Media Queries */
