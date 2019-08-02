@@ -4,16 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
-import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
+import { ExamplesModule } from './components/templates/examples/examples.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        HomeComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -21,7 +22,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         FormsModule,
         RouterModule,
         AppRoutingModule,
-        ComponentsModule,
         ExamplesModule
     ],
     providers: [],
