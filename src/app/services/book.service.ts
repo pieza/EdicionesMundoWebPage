@@ -15,9 +15,9 @@ export class BookService {
   //   ).valueChanges();
   // }
 
-  findAll(title?: string): Observable<Book[]>  {
+  findAll(category?: string): Observable<Book[]>  {
     return this.db.collection<Book>('books', ref => 
-      title ? ref.where('title', '>=', title) : ref
+    category ? ref.where('category', '==', category) : ref
     ).valueChanges()
   }
 }

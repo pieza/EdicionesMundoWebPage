@@ -62,7 +62,7 @@
     data-nav-image="assets/img/blurred-image-1.jpg">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">
+        <a class="nav-link" [routerLink]="['/']">
           <p>Inicio</p>
         </a>
       </li>
@@ -73,8 +73,8 @@
               Catálogo
             </p>
           </a>
-          <div ngbDropdownMenu class="dropdown-menu">
-            <a class="dropdown-item" href="#">Infantiles</a>
+          <div ngbDropdownMenu class="dropdown-menu" [routerLink]="['/catalogo']">
+            <a class="dropdown-item" [routerLink]="['/catalogo/infantiles']">Infantiles</a>
             <a class="dropdown-item" href="#">Diccionarios y Enciclopedias</a>
             <a class="dropdown-item" href="#">Idiomas</a>
             <a class="dropdown-item" href="#">Religón</a>
