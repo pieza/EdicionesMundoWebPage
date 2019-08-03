@@ -3,17 +3,16 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LandingComponent } from './components/templates/examples/landing/landing.component';
-import { LoginComponent } from './components/templates/examples/login/login.component';
-import { ProfileComponent } from './components/templates/examples/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
+import { CatalogueComponent } from './components/catalogue/catalogue.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index', component: HomeComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: '', pathMatch: 'full', component: HomeComponent },
+    { path: 'catalogue',     component: CatalogueComponent },
+    { path: 'about',       component: AboutComponent },
+    { path: 'contact',     component: ContactComponent }
 ];
 
 @NgModule({
