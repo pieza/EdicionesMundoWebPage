@@ -18,8 +18,8 @@ export class CatalogueComponent implements OnInit {
     { text: 'Infantiles', value: 'infatiles'}, 
     { text: 'Diccionarios y enciclopedias', value: 'diccionarios'}
   ];
-  title: string;
-  category: string;
+  title: string = '';
+  category: string = '';
 
   constructor(private route: ActivatedRoute, private router: Router, private bookService: BookService) { }
 
@@ -42,7 +42,7 @@ export class CatalogueComponent implements OnInit {
     
   }
   onSubmit(){
-    this.router.navigate([this.category, this.title != '' ? '?title=' + this.title : '']);
+    this.router.navigateByUrl(`/catalogue/${this.category}${this.title != '' ? '?title=' + this.title : ''}`);
   }
   async load() {
     console.log(this.category, this.title)
