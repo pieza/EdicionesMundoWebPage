@@ -11,6 +11,7 @@ import { BookService } from 'app/services/book.service';
 export class CatalogueComponent implements OnInit {
 
   books: Book[];
+  categories: string[] = ['Todos', 'Infantiles', 'Diccionarios y enciclopedias']
   
   constructor(private route: ActivatedRoute, private bookService: BookService) { }
 
@@ -22,7 +23,6 @@ export class CatalogueComponent implements OnInit {
     this.bookService.findAll().subscribe(_books => {
       this.books = _books;
     });
-    
   }
 
 }
