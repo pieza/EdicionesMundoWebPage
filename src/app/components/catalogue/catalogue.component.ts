@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Book } from 'app/entities/book';
+import { BookService } from 'app/services/book.service';
 
 @Component({
   selector: 'app-catalogue',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogueComponent implements OnInit {
 
-  constructor() { }
+  books: Book[];
+  
+  constructor(private route: ActivatedRoute, private bookService: BookService) { }
 
   ngOnInit() {
+    this.load();
+  }
+  
+  load() {
+    this.bookService.findAll().subscribe(_books => {
+      this.books = _books;
+    });
+    
   }
 
 }

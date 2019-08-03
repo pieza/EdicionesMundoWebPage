@@ -5,12 +5,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
+import { AngularFireModule } from 'angularfire2';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { CatalogueComponent } from './components/catalogue/catalogue.component';
+import { environment } from 'environments/environment.prod';
+import { BookService } from './services/book.service';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
     declarations: [
@@ -23,12 +28,16 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
     ],
     imports: [
         BrowserAnimationsModule,
+        AngularFireModule.initializeApp(environment.firebase, 'prs-emundo'),
+        AngularFirestoreModule,
         NgbModule.forRoot(),
         FormsModule,
         RouterModule,
         AppRoutingModule
     ],
-    providers: [],
+    providers: [
+        BookService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
