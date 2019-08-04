@@ -42,7 +42,7 @@ export class CatalogueComponent implements OnInit {
     
   }
   onSubmit(){
-    this.router.navigateByUrl(`/catalogue/${this.category}${this.title != '' ? '?title=' + this.title : ''}`);
+    this.router.navigateByUrl(`/catalogo/${this.category}${this.title != '' ? '?title=' + this.title : ''}`);
   }
   async load() {
     console.log(this.category, this.title)

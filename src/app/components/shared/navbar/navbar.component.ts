@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
@@ -9,8 +10,9 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
+    private title: string = '';
 
-    constructor(public location: Location, private element : ElementRef) {
+    constructor(public location: Location,  private router: Router, private element : ElementRef) {
         this.sidebarVisible = false;
     }
 
@@ -53,5 +55,9 @@ export class NavbarComponent implements OnInit {
         else {
             return false;
         }
+    }
+
+    onSubmit(){
+        this.router.navigateByUrl(`/catalogo${this.title != '' ? '?title=' + this.title : ''}`);
     }
 }
