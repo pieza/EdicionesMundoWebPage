@@ -9,20 +9,20 @@
           <br>
           <br>
         </p>
-        <form>
+        <form (ngSubmit)="onSubmit()">
           <label>Nombre</label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
             </div>
-            <input class="form-control" placeholder="Tu nombre..." type="text">
+            <input class="form-control" placeholder="Tu nombre..." type="text" [(ngModel)]="name">
           </div>
           <label>Correo Electrónico</label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
             </div>
-            <input class="form-control" placeholder="Tu correo..." type="email">
+            <input class="form-control" placeholder="Tu correo..." type="email" [(ngModel)]="email">
           </div>
           <label>Teléfono</label>
           <div class="input-group">
@@ -30,11 +30,11 @@
               <span class="input-group-text">
                 <i class="now-ui-icons tech_mobile"></i></span>
             </div>
-            <input class="form-control" placeholder="Number Here..." type="text" />
+            <input class="form-control" placeholder="Number Here..." type="text" [(ngModel)]="phone"/>
           </div>
           <div class="form-group">
             <label>Tu Mensaje</label>
-            <textarea class="form-control" id="message" name="message" rows="6"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="6" [(ngModel)]="message"></textarea>
           </div>
           <div class="submit text-center">
               <input class="btn btn-info btn-raised btn-round" type="submit" value="Enviar Mensaje" />

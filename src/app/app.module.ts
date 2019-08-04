@@ -1,5 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -16,6 +17,7 @@ import { CatalogueComponent } from './components/catalogue/catalogue.component';
 import { environment } from 'environments/environment.prod';
 import { BookService } from './services/book.service';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { MailService } from './services/mail.service';
 
 @NgModule({
     declarations: [
@@ -33,10 +35,12 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
         NgbModule.forRoot(),
         FormsModule,
         RouterModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     providers: [
-        BookService
+        BookService,
+        MailService
     ],
     bootstrap: [AppComponent]
 })

@@ -13,5 +13,7 @@ export const environment = {
     storageBucket: "prs-emundo.appspot.com",
     messagingSenderId: "429599445949",
     appId: "1:429599445949:web:015813f7b1b111ec"
-  }
+  },
+  FUNCTIONS_URL: 'https://us-central1-prs-emundo.cloudfunctions.net',
+  TO_CONTACT_EMAIL: 'jandres258@hotmail.com'
 };
