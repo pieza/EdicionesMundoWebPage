@@ -55,19 +55,16 @@
       </ul>
     </div>
   </div>
-</nav> -->
-
-<nav class="navbar navbar-expand-lg bg-info fixed-top">
-  <!-- Button to open menu when is in mobile -->
+</nav> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
     <span class="navbar-toggler-bar bar1"></span>
     <span class="navbar-toggler-bar bar2"></span>
     <span class="navbar-toggler-bar bar3"></span>
-  </button>
+  </button> -->
 
-  <!-- Menu items-->
-  <div class="collapse navbar-collapse"  >
+<nav class="navbar navbar-expand-lg bg-info fixed-top">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" routerLink="/" routerLinkActive="active">
@@ -84,7 +81,7 @@
           </a>
           <div ngbDropdownMenu class="dropdown-menu">
             <a class="dropdown-item" routerLink="/catalogo/infantiles">Infantiles</a>
-            <a class="dropdown-item" href="/catalogo/infantiles">Diccionarios y Enciclopedias</a>
+            <a class="dropdown-item" routerLink="/diccionarios">Diccionarios y Enciclopedias</a>
             <a class="dropdown-item" href="#">Idiomas</a>
             <a class="dropdown-item" href="#">Religón</a>
             <a class="dropdown-item" href="#">Obras Técnicas</a>
