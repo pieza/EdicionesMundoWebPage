@@ -15,8 +15,8 @@ export class CatalogueComponent implements OnInit {
   books: Book[];
   categories: any[] = [
     { text: 'Todos', value: ''}, 
-    { text: 'Infantiles', value: 'infatiles'}, 
-    { text: 'Diccionarios y enciclopedias', value: 'diccionarios'}
+    { text: 'Infantiles', value: 'infantiles'}, 
+    { text: 'Diccionarios y enciclopedias', value: 'diccionarios-y-enciclopedias'}
   ];
   title: string = '';
   category: string = '';
@@ -44,10 +44,10 @@ export class CatalogueComponent implements OnInit {
   onSubmit(){
     this.router.navigateByUrl(`/catalogo/${this.category}${this.title != '' ? '?title=' + this.title : ''}`);
   }
-  async load() {
-    console.log(this.category, this.title)
-
+  
+  load() {
     this.books = [];
+
     this.bookService.findAll(this.category).subscribe(_books => {
       _books.map(_book => {
         if (this.title == undefined || this.title == '' || _book.title.toLowerCase().indexOf(this.title.toLowerCase()) >= 0) {
